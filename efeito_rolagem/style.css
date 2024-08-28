@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.598);
+}
+
+.img-port{
+    width: 360px;
+    height: 660px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.site1{
+    background-image: url("img/tela-github.jpg");
+    transition: 8s;
+}
+
+.site2{
+    background-image: url("img/tela-facebook.jpg");
+    transition: 7s;
+}

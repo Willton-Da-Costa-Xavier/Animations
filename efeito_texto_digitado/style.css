@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.txtanimado{
+    font-size: 55px;
+    font-weight: 300;
+    color: white;
+}
+
+.txtanimado span{
+    position: relative;
+}
+
+.txtanimado span::before{
+    content: "";
+    color: #ff007b;
+    animation: palavras 20s infinite;
+}
+
+.txtanimado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #ff007b;
+    right: -10px;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 15px);
+    background-color: black;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid black;
+    }
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "Voce deve Marar";
+    }
+
+    21%,40%{
+        content: "N Pode nos viajar";
+    }
+
+    41%, 60%{
+        content: "Comecar a levar a serio";
+    }
+
+    61%, 80%{
+        content: "Como queres ser nosso Patrocinador assim";
+    }
+
+    81%, 100%{
+        content: "e para de criar dividas";
+    }
+}
