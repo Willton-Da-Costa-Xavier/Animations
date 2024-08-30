@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+ul li{
+    width: 80px;
+    height: 80px;
+
+    background-color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.387);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+}
+
+ul li:hover{
+    width: 180px;
+}
+
+ul li span{
+    position: absolute;
+}
+
+ul li .icon{
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .2s;
+}
+
+ul li .text{
+    color: #fff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+ul li:hover .text{
+    transform: scale(1);
+}
+
+ul li:hover .icon{
+    transform: scale(0);
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(45deg,var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+ul li:hover::before{
+    opacity: 1;
+}
