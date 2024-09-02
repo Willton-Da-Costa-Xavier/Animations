@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dialog{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 400px;
+    background-image: url("img/hotel-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 0;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.475);
+}
+
+dialog div{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog div h1{
+    font-size: 4em;
+    color: #15d1c4;
+}
+
+dialog div p:nth-of-type(1){
+    font-size: 1.2em;
+}
+
+dialog > button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+dialog div button{
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #00baae;
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
