@@ -1,27 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- bootsap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- bootsap icons -->
+
+    <!-- biblioteca de slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fim -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <title>Carocell de Depoimento</title>
 </head>
+
 <body>
-    <section class="depoimentos">
-        <div class="depoimentos-container">
-            <div class="slide">
+    <section class="depoimentos mySwiper">
+        <div class="depoimentos-container swiper-wrapper">
+            <div class="slide swiper-slide">
                 <i class="bi bi-quote"></i>
 
-                <p class="depoi-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente officia magnam, perferendis pariatur est voluptate hic ut eveniet. Voluptatibus ab quisquam asperiores animi doloribus cumque reprehenderit assumenda molestiae dignissimos.</p>
+                <p class="depoi-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente officia
+                    magnam, perferendis pariatur est voluptate hic ut eveniet. Voluptatibus ab quisquam asperiores animi
+                    doloribus cumque reprehenderit assumenda molestiae dignissimos.</p>
+
+                <div class="person">
+                    <img src="img/pessoa1.png" alt="">
+                    <div class="info-person">
+                        <p class="nome-person">Amanda Fores</p>
+                        <p class="func-person">Web Developer</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="person">
+            <div class="slide swiper-slide">
+                <i class="bi bi-quote"></i>
+
+                <p class="depoi-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente officia
+                    magnam, perferendis pariatur est voluptate hic ut eveniet. Voluptatibus ab quisquam asperiores animi
+                    doloribus cumque reprehenderit assumenda molestiae dignissimos.</p>
+
+                <div class="person">
+                    <img src="img/pessoa2.png" alt="">
+                    <div class="info-person">
+                        <p class="nome-person">Kaila Ribeiros</p>
+                        <p class="func-person">Video Maker</p>
+                    </div>
+                </div>
 
             </div>
+
+            <div class="slide swiper-slide">
+                <i class="bi bi-quote"></i>
+
+                <p class="depoi-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente officia
+                    magnam, perferendis pariatur est voluptate hic ut eveniet. Voluptatibus ab quisquam asperiores animi
+                    doloribus cumque reprehenderit assumenda molestiae dignissimos.</p>
+
+                <div class="person">
+                    <img src="img/pessoa3.png" alt="">
+                    <div class="info-person">
+                        <p class="nome-person">Tomas Jefferson</p>
+                        <p class="func-person">Photograffer</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slide swiper-slide">
+                <i class="bi bi-quote"></i>
+
+                <p class="depoi-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente officia
+                    magnam, perferendis pariatur est voluptate hic ut eveniet. Voluptatibus ab quisquam asperiores animi
+                    doloribus cumque reprehenderit assumenda molestiae dignissimos.</p>
+
+                <div class="person">
+                    <img src="img/pessoa4.png" alt="">
+                    <div class="info-person">
+                        <p class="nome-person">Vanelio Nhari</p>
+                        <p class="func-person">Fisherman</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slide swiper-slide">
+                <i class="bi bi-quote"></i>
+
+                <p class="depoi-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente officia
+                    magnam, perferendis pariatur est voluptate hic ut eveniet. Voluptatibus ab quisquam asperiores animi
+                    doloribus cumque reprehenderit assumenda molestiae dignissimos.</p>
+
+                <div class="person">
+                    <img src="img/pessoa5.png" alt="">
+                    <div class="info-person">
+                        <p class="nome-person">Amanda Fores</p>
+                        <p class="func-person">Kid</p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

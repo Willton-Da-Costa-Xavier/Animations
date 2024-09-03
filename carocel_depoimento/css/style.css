@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos{
+    width: 100%;
+   padding: 50px 20px;
+
+   max-width: 900px;
+   position: relative;
+
+   overflow: hidden;
+}
+
+.depoimentos .slide{
+    padding: 40px 60px;
+    cursor: grab;
+}
+
+.depoimentos .slide:active{
+    cursor: grabbing;
+}
+
+.depoimentos i{
+    font-size: 90px;
+    color: #ccc;
+}
+
+.depoimentos p.depoi-txt{
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.slide .person img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.slide .person{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide .person p.nome-person{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.slide .person p.func-person{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-btn{
+        display: none;
+    }
+}
