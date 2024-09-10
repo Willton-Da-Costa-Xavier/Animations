@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page1{
+    background-color: orangered;
+}
+
+.page2{
+    background-color: #3772ff;
+}
+
+.page3{
+    background-color: #fdc340;
+}
+
+.page4{
+    background-color: #00ffae;
+}
+
+.page5{
+    background-color: #0c070c;
+}
+
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
