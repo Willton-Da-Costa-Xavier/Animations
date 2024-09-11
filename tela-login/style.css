@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url("img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.box-login{
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff77;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box-img{
+    display: flex;
+    align-items: center;
+}
+
+.box-login .boneco{
+    background-image: url("img/boneco.png");
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 60px;
+}
+
+.box-img h2{
+    color: #fff;
+}
+
+.box-login label{
+    display: block;
+    color: #fff;
+}
+
+.box-login input[type="text"], input[type="password"]{
+    width: 100%;
+    line-height: 35px;
+    border: 0;
+}
+
+.box-login input[type="text"]{
+    margin-bottom: 20px;
+}
+
+.box-login a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box-login input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: tomato;
+    color: #fff;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}

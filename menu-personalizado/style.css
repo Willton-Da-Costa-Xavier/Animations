@@ -7,6 +7,10 @@
     font-family: "Titillium Web", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     max-width: 1080px;
     margin: 0 auto;
@@ -69,4 +73,26 @@ header{
 .sociais button i{
     font-size: 20px;
     color: #ffffff;
+}
+
+main{
+    background-color: #fff;
+}
+
+section{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.221);
+}
+
+.conteudo h2{
+    font-size: 2em;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+
+.conteudo p{
+    font-size: 1.2em;
+}
+
+.conteudo{
+    padding: 50px;
 }
